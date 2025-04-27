@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Finlândia - Descubra as maravilhas nórdicas</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Bootstrap -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 text-primary" href="#"
+          >Guia Finlândia</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center gap-2"
+                href="#destinos"
+              >
+                <i class="fas fa-map-marked-alt"></i> Destinos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center gap-2"
+                href="#atracoes"
+              >
+                <i class="fas fa-mountain"></i> Atrações
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#mapa">
+                <i class="fas fa-map"></i> Mapa
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#dicas">
+                <i class="fas fa-info-circle"></i> Dicas
+              </a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a
+                class="btn btn-primary d-flex align-items-center gap-2"
+                href="#login"
+              >
+                <i class="fas fa-user"></i> Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <!-- Banner Principal -->
+      <section class="banner d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="display-4 fw-bold mb-3">Descubra a Finlândia</h1>
+              <p class="lead mb-4">
+                Explore a terra da aurora boreal, dos lagos cristalinos e do
+                verdadeiro Papai Noel
+              </p>
+              <a href="#destinos" class="btn btn-primary btn-lg px-4"
+                >Explorar Destinos</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Texto Introdutório -->
+      <section class="py-5">
+        <div class="container text-center">
+          <h2 class="display-5 mb-4">Bem-vindo ao Guia Finlândia</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <p class="lead">
+                Nosso guia turístico especializado oferece informações
+                detalhadas sobre os melhores destinos da Finlândia. Desde as
+                vibrantes cidades até as paisagens naturais intocadas, ajudamos
+                você a planejar a viagem perfeita para este país nórdico
+                encantador.
+              </p>
+              <p class="lead">
+                Explore nossas recomendações de lugares turísticos, descubra
+                atrações únicas e obtenha dicas valiosas para sua aventura
+                finlandesa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filtro de Atrações -->
+      <section id="filtro" class="py-4 bg-light">
+        <div class="container text-center">
+          <h2 class="h4 text-muted mb-4">Encontre por Tipo de Atração</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <button class="btn btn-outline-primary active" data-filter="todos">
+              Todos
+            </button>
+            <button class="btn btn-outline-primary" data-filter="natureza">
+              <i class="fas fa-tree me-1"></i> Natureza
+            </button>
+            <button class="btn btn-outline-primary" data-filter="cidade">
+              <i class="fas fa-city me-1"></i> Cidades
+            </button>
+            <button class="btn btn-outline-primary" data-filter="cultura">
+              <i class="fas fa-landmark me-1"></i> Cultura
+            </button>
+            <button class="btn btn-outline-primary" data-filter="aventura">
+              <i class="fas fa-skiing me-1"></i> Aventura
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards de destinos -->
+      <section id="destinos" class="py-5">
+        <div class="container">
+          <h2 class="display-5 text-center mb-3">Destinos Recomendados</h2>
+          <p class="text-muted text-center mb-5">
+            Descubra as melhores cidades e regiões da Finlândia
+          </p>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-categoria="cidade">
+              <div class="card h-100 border-0 shadow-sm destino-card">
+                <div class="card-image overflow-hidden" style="height: 200px">
+                  <img
+                    src="https://images.unsplash.com/photo-1522885147691-06d859633fb8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid w-100 h-100 object-fit-cover"
+                    alt="Helsinque"
+                  />
+                  <div class="card-overlay">
+                    <a href="#helsinque" class="btn btn-outline-light"
+                      >Ver mais</a
+                    >
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="h5">Helsinque</h3>
+                  <div class="d-flex justify-content-between mb-2">
+                    <span class="badge bg-light text-dark">
+                      <i class="fas fa-city me-1"></i> Cidade
+                    </span>
+                    <div class="rating">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star-half-alt text-warning"></i>
+                      <small class="text-muted">4.5 (1.2k)</small>
+                    </div>
+                  </div>
+                  <p class="card-text text-muted">
+                    A capital da Finlândia oferece uma mistura de cultura
+                    moderna, história rica e belíssimas paisagens urbanas.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-top">
+                  <div class="d-flex justify-content-between small text-muted">
+                    <span
+                      ><i class="fas fa-map-marker-alt me-1"></i> Sul da
+                      Finlândia</span
+                    >
+                    <span><i class="fas fa-sun me-1"></i> Junho-Agosto</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-categoria="natureza aventura">
+              <div class="card h-100 border-0 shadow-sm destino-card">
+                <div class="card-image overflow-hidden" style="height: 200px">
+                  <img
+                    src="https://images.unsplash.com/photo-1742386675795-53fb54ed3d2b?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid w-100 h-100 object-fit-cover"
+                    alt="Lapônia"
+                  />
+                  <div class="card-overlay">
+                    <a href="#lapland" class="btn btn-outline-light"
+                      >Ver mais</a
+                    >
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="h5">Lapônia</h3>
+                  <div class="d-flex justify-content-between mb-2">
+                    <span class="badge bg-light text-dark">
+                      <i class="fas fa-snowflake me-1"></i> Natureza
+                    </span>
+                    <div class="rating">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <small class="text-muted">5.0 (2.4k)</small>
+                    </div>
+                  </div>
+                  <p class="card-text text-muted">
+                    Conhecida por suas paisagens cobertas de neve, a Lapônia é o
+                    local perfeito para observar a Aurora Boreal.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-top">
+                  <div class="d-flex justify-content-between small text-muted">
+                    <span
+                      ><i class="fas fa-map-marker-alt me-1"></i> Norte da
+                      Finlândia</span
+                    >
+                    <span
+                      ><i class="fas fa-snowflake me-1"></i>
+                      Dezembro-Março</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-categoria="cultura aventura">
+              <div class="card h-100 border-0 shadow-sm destino-card">
+                <div class="card-image overflow-hidden" style="height: 200px">
+                  <img
+                    src="https://images.unsplash.com/photo-1586125916870-958d645d407e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid w-100 h-100 object-fit-cover"
+                    alt="Rovaniemi"
+                  />
+                  <div class="card-overlay">
+                    <a href="#rovaniemi" class="btn btn-outline-light"
+                      >Ver mais</a
+                    >
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="h5">Rovaniemi</h3>
+                  <div class="d-flex justify-content-between mb-2">
+                    <span class="badge bg-light text-dark">
+                      <i class="fas fa-sleigh me-1"></i> Cultura
+                    </span>
+                    <div class="rating">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <small class="text-muted">4.9 (1.8k)</small>
+                    </div>
+                  </div>
+                  <p class="card-text text-muted">
+                    Lar do Papai Noel, Rovaniemi oferece aventuras de inverno e
+                    uma paisagem espetacular no círculo polar ártico.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-top">
+                  <div class="d-flex justify-content-between small text-muted">
+                    <span
+                      ><i class="fas fa-map-marker-alt me-1"></i> Lapônia</span
+                    >
+                    <span
+                      ><i class="fas fa-snowflake me-1"></i>
+                      Novembro-Março</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mapa Interativo -->
+      <section id="mapa" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="display-5 text-center mb-5">Mapa Interativo</h2>
+          <div class="ratio ratio-16x9 rounded shadow overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7253666.09615298!2d22.22902325!3d64.77537545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2sFinl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Atrações -->
+      <section id="atracoes" class="py-5">
+        <div class="container">
+          <h2 class="display-5 text-center mb-5">Principais Atrações</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1709843827892-5175973c424e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="Aurora Boreal"
+                  style="height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h3 class="h5">Aurora Boreal</h3>
+                  <p class="card-text text-muted">
+                    O espetáculo de luzes naturais que ilumina o céu noturno no
+                    norte do país.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-top">
+                  <a href="#" class="btn btn-primary w-100">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1553966528-237ab71fb292?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="Vila do Papai Noel"
+                  style="height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h3 class="h5">Vila do Papai Noel</h3>
+                  <p class="card-text text-muted">
+                    Visite a casa oficial do Papai Noel em Rovaniemi, na Lapônia
+                    finlandesa.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-top">
+                  <a href="#" class="btn btn-primary w-100">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1692985159902-50c672483c31?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="Sauna Finlandesa"
+                  style="height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h3 class="h5">Sauna Finlandesa</h3>
+                  <p class="card-text text-muted">
+                    Experimente a autêntica tradição da sauna, uma parte
+                    essencial da cultura finlandesa.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-top">
+                  <a href="#" class="btn btn-primary w-100">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carrossel de Fotos -->
+      <section id="galeria" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="display-5 text-center mb-5">Galeria de Fotos</h2>
+          <div
+            id="carouselFinlandia"
+            class="carousel slide shadow rounded overflow-hidden"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.unsplash.com/photo-1585727384562-8c1685105af5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="Finlândia no Inverno"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div class="carousel-caption bg-dark bg-opacity-50 p-3">
+                  <h5>Finlândia no Inverno</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1586699253884-e199770f63b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="Lagos Finlandeses"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div class="carousel-caption bg-dark bg-opacity-50 p-3">
+                  <h5>Lagos Finlandeses</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="Arquitetura de Helsinque"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div class="carousel-caption bg-dark bg-opacity-50 p-3">
+                  <h5>Arquitetura de Helsinque</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1505136026201-bbc1bc0949fa?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="Aurora Boreal"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div class="carousel-caption bg-dark bg-opacity-50 p-3">
+                  <h5>Aurora Boreal</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselFinlandia"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselFinlandia"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Dicas -->
+      <section id="dicas" class="py-5 bg-primary text-white">
+        <div class="container">
+          <h2 class="display-5 text-center mb-5">Dicas de Viagem</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 bg-white text-dark text-center p-4"
+              >
+                <i class="fas fa-snowflake fa-3x mb-3 text-primary"></i>
+                <h3 class="h5 mb-3">Roupas para o Frio</h3>
+                <p>
+                  No inverno, use várias camadas de roupa e um bom casaco
+                  térmico. Não se esqueça de luvas, gorro e botas quentes.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 bg-white text-dark text-center p-4"
+              >
+                <i class="fas fa-sun fa-3x mb-3 text-primary"></i>
+                <h3 class="h5 mb-3">Sol da Meia-Noite</h3>
+                <p>
+                  No verão, o sol não se põe no norte do país. Leve uma máscara
+                  para dormir se for sensível à luz.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 bg-white text-dark text-center p-4"
+              >
+                <i class="fas fa-wallet fa-3x mb-3 text-primary"></i>
+                <h3 class="h5 mb-3">Custos</h3>
+                <p>
+                  A Finlândia é um país caro. Planeje seu orçamento com
+                  antecedência e considere comprar o Helsinki Card para
+                  economizar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="py-5 bg-dark text-white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="display-5 mb-4">Receba nossas ofertas especiais</h2>
+              <p class="lead mb-5">
+                Inscreva-se para receber dicas de viagem, promoções e novidades
+                sobre a Finlândia.
+              </p>
+              <form class="row g-2 justify-content-center">
+                <div class="col-md-8">
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    placeholder="Digite seu e-mail"
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <button type="submit" class="btn btn-primary btn-lg w-100">
+                    Assinar <i class="fas fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h3 class="h4 mb-4">Sobre Nós</h3>
+            <p>
+              O Guia Finlândia é o mais completo recurso online para planejar
+              sua viagem à Finlândia, com informações atualizadas e dicas
+              locais.
+            </p>
+            <div class="d-flex gap-3 mt-4">
+              <a href="#" class="text-white"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <h3 class="h4 mb-4">Links Rápidos</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#destinos" class="text-decoration-none">Destinos</a>
+              </li>
+              <li class="mb-2">
+                <a href="#atracoes" class="text-decoration-none">Atrações</a>
+              </li>
+              <li class="mb-2">
+                <a href="#mapa" class="text-decoration-none">Mapa</a>
+              </li>
+              <li class="mb-2">
+                <a href="#dicas" class="text-decoration-none">Dicas</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h3 class="h4 mb-4">Contato</h3>
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex align-items-center gap-2">
+                <i class="fas fa-envelope"></i> contato@guiadinlandia.com
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-2">
+                <i class="fas fa-phone"></i> +358 40 123 4567
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-2">
+                <i class="fas fa-map-marker-alt"></i> Helsinki, Finlândia
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="text-center small">
+          &copy; 2025 Guia Finlândia. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

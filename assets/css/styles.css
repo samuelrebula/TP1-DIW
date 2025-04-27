@@ -1,0 +1,186 @@
+:root {
+  --primary-color: #003580; /* Azul escuro */
+  --secondary-color: #0077c0; /* Azul médio */
+  --accent-color: #4a90e2; /* Azul claro */
+  --button-hover: #2a7bde; /* Azul hover */
+  --light-color: #f5f7fa;
+  --dark-color: #333333;
+  --text-color: #2d3748;
+  --text-light: #718096;
+}
+
+/* Padronização das fontes */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* === BANNER === */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://wallpapercave.com/wp/wp4442725.jpg") no-repeat center
+      center/cover;
+  height: 500px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 350px;
+  }
+}
+
+/* Cards customizados */
+.destino-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destino-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  transition: transform 0.5s;
+}
+
+.destino-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  background: rgba(0, 53, 128, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.destino-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.btn-card {
+  border: 2px solid white;
+  transition: all 0.3s;
+}
+
+.btn-card:hover {
+  background: white !important;
+  color: var(--primary-color) !important;
+}
+
+.tipo-atracao {
+  background-color: var(--light-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating i {
+  color: var(--accent-color);
+}
+
+/* Atrações */
+.atracao-card {
+  transition: transform 0.3s;
+}
+
+.atracao-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Dicas */
+.dica-card {
+  transition: transform 0.3s;
+}
+
+.dica-card:hover {
+  transform: translateY(-5px);
+}
+
+.dica-card i {
+  color: var(--primary-color);
+}
+
+/* Newsletter */
+.newsletter-section {
+  background: linear-gradient(rgba(0, 53, 128, 0.9), rgba(0, 53, 128, 0.9)),
+    url("https://wallpapercave.com/wp/wp4442725.jpg") no-repeat center
+      center/cover;
+  color: white;
+}
+
+/* Footer ajustado */
+.footer {
+  background-color: var(--primary-color);
+}
+
+.footer,
+.footer a,
+.footer .text-muted {
+  color: #f8f9fa !important;
+}
+
+.footer a:hover {
+  color: var(--accent-color) !important;
+  text-decoration: none;
+}
+
+.footer .socials a {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footer .socials a:hover {
+  background: var(--accent-color) !important;
+}
+
+/* Cores customizadas */
+.bg-primary-custom {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary-custom {
+  color: var(--primary-color) !important;
+}
+
+.bg-accent {
+  background-color: var(--accent-color) !important;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn-accent:hover {
+  background-color: var(--button-hover);
+  color: white;
+}
