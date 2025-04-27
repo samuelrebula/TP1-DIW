@@ -30,14 +30,7 @@ h6,
   font-weight: 700;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-/* === BANNER === */
+/* Banner */
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://wallpapercave.com/wp/wp4442725.jpg") no-repeat center
@@ -52,7 +45,7 @@ h6,
   }
 }
 
-/* Cards customizados */
+/* Cards customizados (Usados em index.html - Gerado por JS) */
 .destino-card {
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -103,41 +96,7 @@ h6,
   gap: 5px;
 }
 
-.rating i {
-  color: var(--accent-color);
-}
-
-/* Atrações */
-.atracao-card {
-  transition: transform 0.3s;
-}
-
-.atracao-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Dicas */
-.dica-card {
-  transition: transform 0.3s;
-}
-
-.dica-card:hover {
-  transform: translateY(-5px);
-}
-
-.dica-card i {
-  color: var(--primary-color);
-}
-
-/* Newsletter */
-.newsletter-section {
-  background: linear-gradient(rgba(0, 53, 128, 0.9), rgba(0, 53, 128, 0.9)),
-    url("https://wallpapercave.com/wp/wp4442725.jpg") no-repeat center
-      center/cover;
-  color: white;
-}
-
-/* Footer ajustado */
+/* Footer */
 .footer {
   background-color: var(--primary-color);
 }
@@ -151,15 +110,6 @@ h6,
 .footer a:hover {
   color: var(--accent-color) !important;
   text-decoration: none;
-}
-
-.footer .socials a {
-  color: white !important;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.footer .socials a:hover {
-  background: var(--accent-color) !important;
 }
 
 /* Cores customizadas */
@@ -183,4 +133,48 @@ h6,
 .btn-accent:hover {
   background-color: var(--button-hover);
   color: white;
+}
+
+/* Estilos específicos da página de detalhes (Usados em detalhe.html - Gerado por JS) */
+.detalhe-imagem-principal {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.foto-complementar img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  transition: transform 0.2s ease-in-out;
+}
+.foto-complementar img:hover {
+  transform: scale(1.05);
+}
+.foto-complementar figcaption {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--text-light);
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.info-item i {
+  color: var(--primary-color);
+  width: 20px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .sticky-lg-top {
+    position: sticky;
+    top: 80px;
+    z-index: 1019;
+  }
 }
